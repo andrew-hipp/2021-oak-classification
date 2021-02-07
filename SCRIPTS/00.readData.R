@@ -3,6 +3,14 @@
 library(ape)
 library(openxlsx)
 library(magrittr)
+if(!exists('weldTaxa')) {
+  source('https://raw.githubusercontent.com/andrew-hipp/morton/master/R/weldTaxa.R')}
+
+tr.gambeliiList <- data.frame(spliceTaxa = c('Quercus_lobata','Quercus_arizonica'),
+                              spliceRule = rep('sister',2),
+                              seqOrSplice = rep('** SPLICE **',2),
+                              row.names = c('Quercus_gambelii', 'Quercus_depressipes')
+                            )
 
 ## tip.dat.raw = original tip data from Hipp et al. 2020, New Phyt
 ## tip.dat = edited from this tree, used for downstream analyses
@@ -25,8 +33,10 @@ tip.dat.raw <- tip.dat.raw[!duplicated(tip.dat.raw$sp), ]
 tip.dat.raw <- tip.dat.raw[grep('Quercus', tip.dat.raw$subgenus), ]
 tr <- drop.tip(tr, setdiff(tr$tip.label, tip.dat.raw$sp))
 
-pdf('../OUT/tr.checkingNames.pdf', 8.5,15)
-plot(tr, cex = 0.5)
-dev.off()
+tr <- weldTaxa(tr = tr, taxa = tr.gambeliiList)
 
 tip.dat <- read.csv('../DATA/tips.data.csv', row.names = 7, as.is = TRUE)
+
+pdf('../OUT/tr.checkingNames.pdf', 8.5,15)
+plot(tr, cex = 0.5, tip.color = ifelse(tip.dat[tr$tip.label, 'NAm'], 'black', 'gray'))
+dev.off()

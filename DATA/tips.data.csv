@@ -168,7 +168,7 @@ Quercus_resinosa_|_CAVENDER-BARES_|_JCB-MX-JA-TM-110_|_Mexico_|_Jalisco_|_OAK-UM
 Quercus_magnoliifolia_|_CAVENDER-BARES_|_JCB-MX-JA-MA-153_|_Mexico_|_Jalisco_|_JCB-MX-JA-MA-153,subg. Quercus,Quercus,Leucomexicana,FALSE,JCB-MX-JA-MA-153,Quercus_magnoliifolia
 Quercus_arizonica_|_HIPP_|_2015034_|_Mexico_|_Durango_|_OAK-MOR-923,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-923,Quercus_arizonica
 Quercus_striatula_|_HIPP_|_2017163_|_Mexico_|_FALSE_|_OAK-MOR-001214,subg. Quercus,Quercus,Leucomexicana,FALSE,OAK-MOR-001214,Quercus_striatula
-Quercus_chihuahuensis_|_HIPP_|_2015076_|_Mexico_|_Jalisco_|_OAK-MOR-931,subg. Quercus,Quercus,Leucomexicana,FALSE,OAK-MOR-931,Quercus_chihuahuensis
+Quercus_chihuahuensis_|_HIPP_|_2015076_|_Mexico_|_Jalisco_|_OAK-MOR-931,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-931,Quercus_chihuahuensis
 Quercus_grisea_|_CAVENDER-BARES_|_AZ-CH-10_|_USA_|_Arizona_|_OAK-MOR-362,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-362,Quercus_grisea
 Quercus_toumeyi_|_CAVENDER-BARES_|_AZ-CH-7_|_USA_|_Arizona_|_OAK-MOR-365,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-365,Quercus_toumeyi
 Quercus_turbinella_|_CAVENDER-BARES_|_JCB-US-AZ-CH-TU_|_USA_|_Arizona_|_OAK-UMN-040,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-UMN-040,Quercus_turbinella
@@ -176,3 +176,4 @@ Quercus_ajoensis_|_CAVENDER-BARES_|_JCB-US-AZ-AM-AJ-2_|_USA_|_Arizona_|_OAK-UMN-
 Quercus_laeta_|_CAVENDER-BARES_|_JCB-MX-JA-AM-157_|_Mexico_|_Jalisco_|_OAK-UMN-088,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-UMN-088,Quercus_laeta
 Quercus_engelmannii_|_HIPP_|_CA-DAV-MH37_|_USA_|_California_|_OAK-MOR-394,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-394,Quercus_engelmannii
 Quercus_oblongifolia_|_HIPP_|_2017154_|_Mexico_|_FALSE_|_OAK-MOR-001205,subg. Quercus,Quercus,Leucomexicana,TRUE,OAK-MOR-001205,Quercus_oblongifolia
+Quercus_gambelii_|_NA_|_NA_|_NA_|_NA_|_splicedPerMcVay2017,subg. Quercus,Quercus,Dumosae,TRUE,NA,Quercus_gambelii
