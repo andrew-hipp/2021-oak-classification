@@ -35,7 +35,11 @@ tr <- drop.tip(tr, setdiff(tr$tip.label, tip.dat.raw$sp))
 
 tr <- weldTaxa(tr = tr, taxa = tr.gambeliiList)
 
+tr$tip.label <- gsub('_', ' ', tr$tip.label, fixed = T)
+
 tip.dat <- read.csv('../DATA/tips.data.csv', row.names = 7, as.is = TRUE)
+row.names(tip.dat) <- gsub('_', ' ', row.names(tip.dat), fixed = T)
+tip.dat$node <- nodeid(tr, row.names(tip.dat))
 
 pdf('../OUT/tr.checkingNames.pdf', 8.5,15)
 plot(tr, cex = 0.5, tip.color = ifelse(tip.dat[tr$tip.label, 'NAm'], 'black', 'gray'))
