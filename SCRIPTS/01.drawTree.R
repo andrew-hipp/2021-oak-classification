@@ -2,12 +2,12 @@ require(ggtree)
 require(ggplot2)
 require(dplyr)
 
-troubleshoot = T
+troubleshoot = F
 
 lwdLabel = c(subsection = 1, section = 1, subgenus = 1)
 cexLabel = c(subsection = 2, section = 2, subgenus = 2)
-colLab <- c(Lobatae = 'red', Protobalanus = 'yellow',
-            Ponticae = 'blue', Quercus = 'black', Virentes = 'green',
+colLab <- c(Lobatae = 'red', Quercus = 'black',
+            Protobalanus = 'blue', Ponticae = 'blue', Virentes = 'blue',
             ## now red oak subsections
             Agrifoliae = 'red',
             Palustres = 'red1',
@@ -25,9 +25,9 @@ colLab <- c(Lobatae = 'red', Protobalanus = 'yellow',
             Leucomexicana = 'gray60'
           )
 
-offsetLabel = c(subsection = 15, section = 20)
+offsetLabel = c(subsection = 20, section = 25)
 offsetTemp <- min(offsetLabel)
-barExtend = -1
+barExtend = -0.2
 
 ## make base tree
 tr.plot <- full_join(tr, tip.dat, by = 'node')

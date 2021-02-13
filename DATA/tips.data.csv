@@ -42,7 +42,7 @@ Quercus_aristata_|_SOCORRO_GONZALEZ-HIPP_|_8370_|_Mexico_|_Nayarit_|_OAK-MOR-113
 Quercus_planipocula_|_HIPP_|_IL-SH-082_|_USA_|_Illinois_|_OAK-MOR-495,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-MOR-495,Quercus_planipocula
 Quercus_uxoris_|_CAVENDER-BARES_|_JCB-MX-JA-MA-135_|_Mexico_|_Jalisco_|_OAK-UMN-066,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-UMN-066,Quercus_uxoris
 Quercus_iltisii_|_CAVENDER-BARES_|_JCB-MX-OA-PO-72_|_Mexico_|_Oaxaca_|_OAK-UMN-323,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-UMN-323,Quercus_iltisii
-Quercus_segoviensis_|_GONZALEZ_|_AGR33_|_NA_|_NA_|_AGR33,subg. Quercus,Lobatae,Erythromexicana,FALSE,AGR33,Quercus_segoviensis
+Quercus_segoviensis_|_GONZALEZ_|_AGR33_|_NA_|_NA_|_AGR33,subg. Quercus,Quercus,Leucomexicana,FALSE,AGR33,Quercus_segoviensis
 Quercus_elliptica_|_CAVENDER-BARES_|_JCB-MX-OA-PO-60_|_Mexico_|_Oaxaca_|_OAK-UMN-311,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-UMN-311,Quercus_elliptica
 Quercus_sartorii_|_GONZALEZ_|_AGR8_|_Mexico_|_Hidalgo_|_AGR-8,subg. Quercus,Lobatae,Erythromexicana,FALSE,AGR-8,Quercus_sartorii
 Quercus_delgadoana_|_GONZALEZ_|_AGR11_|_Mexico_|_Hidalgo_|_AGR11,subg. Quercus,Lobatae,Erythromexicana,FALSE,AGR11,Quercus_delgadoana
@@ -73,13 +73,13 @@ Quercus_durifolia_|_HIPP_|_2015055_|_Mexico_|_Durango_|_OAK-MOR-944,subg. Quercu
 Quercus_eduardi_|_HIPP_|_2017156_|_Mexico_|_FALSE_|_OAK-MOR-001207,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-MOR-001207,Quercus_eduardi
 Quercus_jonesii_|_HIPP_|_2017103_|_Mexico_|_FALSE_|_OAK-MOR-001157,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-MOR-001157,Quercus_jonesii
 Quercus_emoryi_|_HIPP_|_2017152_|_Mexico_|_FALSE_|_OAK-MOR-001203,subg. Quercus,Lobatae,Erythromexicana,TRUE,OAK-MOR-001203,Quercus_emoryi
-Quercus_cedrosensis_|_MANOS_|_PM-247_|_US_|_NA_|_PM_247,subg. Quercus,Protobalanus,NA,TRUE,PM247,Quercus_cedrosensis
-Quercus_palmeri_|_HIPP_|_CA-DAV-MH23_|_USA_|_California_|_OAK-MOR-135,subg. Quercus,Protobalanus,NA,TRUE,OAK-MOR-135,Quercus_palmeri
-Quercus_vacciniifolia_|_HIPP_|_CA-MH68_|_USA_|_California_|_OAK-MOR-377,subg. Quercus,Protobalanus,NA,TRUE,OAK-MOR-377,Quercus_vacciniifolia
-Quercus_chrysolepis_|_HIPP_|_CA-MH70_|_USA_|_California_|_OAK-MOR-474,subg. Quercus,Protobalanus,NA,TRUE,OAK-MOR-474,Quercus_chrysolepis
-Quercus_tomentella_|_MANOS_|_PM-4_|_USA_|_California_|_PM4,subg. Quercus,Protobalanus,NA,TRUE,PM4,Quercus_tomentella
-Quercus_sadleriana_|_HIPP_|_EMBG_2907_|_NA_|_NA_|_OAK-MOR-625,subg. Quercus,Ponticae,NA,TRUE,OAK-MOR-625,Quercus_sadleriana
-Quercus_pontica_|_HIPP_|_IL-SH-167_|_USA_|_Illinois_|_OAK-MOR-199,subg. Quercus,Ponticae,NA,FALSE,OAK-MOR-199,Quercus_pontica
+Quercus_cedrosensis_|_MANOS_|_PM-247_|_US_|_NA_|_PM_247,subg. Quercus,Protobalanus,,TRUE,PM247,Quercus_cedrosensis
+Quercus_palmeri_|_HIPP_|_CA-DAV-MH23_|_USA_|_California_|_OAK-MOR-135,subg. Quercus,Protobalanus,,TRUE,OAK-MOR-135,Quercus_palmeri
+Quercus_vacciniifolia_|_HIPP_|_CA-MH68_|_USA_|_California_|_OAK-MOR-377,subg. Quercus,Protobalanus,,TRUE,OAK-MOR-377,Quercus_vacciniifolia
+Quercus_chrysolepis_|_HIPP_|_CA-MH70_|_USA_|_California_|_OAK-MOR-474,subg. Quercus,Protobalanus,,TRUE,OAK-MOR-474,Quercus_chrysolepis
+Quercus_tomentella_|_MANOS_|_PM-4_|_USA_|_California_|_PM4,subg. Quercus,Protobalanus,,TRUE,PM4,Quercus_tomentella
+Quercus_sadleriana_|_HIPP_|_EMBG_2907_|_NA_|_NA_|_OAK-MOR-625,subg. Quercus,Ponticae,,TRUE,OAK-MOR-625,Quercus_sadleriana
+Quercus_pontica_|_HIPP_|_IL-SH-167_|_USA_|_Illinois_|_OAK-MOR-199,subg. Quercus,Ponticae,,FALSE,OAK-MOR-199,Quercus_pontica
 Quercus_serrata_|_HIPP_|_IL-MOR-MH225_|_U.S.A._|_IL_|_OAK-MOR-601,subg. Quercus,Quercus,Roburoids,FALSE,OAK-MOR-601,Quercus_serrata
 Quercus_mongolica_|_HIPP_|_IL-MOR-MH106_|_USA_|_Illinois_|_OAK-MOR-360,subg. Quercus,Quercus,Roburoids,FALSE,OAK-MOR-360,Quercus_mongolica
 Quercus_dentata_|_HIPP_|_IL-MOR-MH208_|_U.S.A._|_IL_|_OAK-MOR-690,subg. Quercus,Quercus,Roburoids,FALSE,OAK-MOR-690,Quercus_dentata
@@ -121,13 +121,13 @@ Quercus_prinoides_|_HIPP_|_IL-SH-96_|_USA_|_Illinois_|_OAK-MOR-532,subg. Quercus
 Quercus_lyrata_|_HIPP_|_IL-MOR-MH078__|_USA_|_Illinois_|_OAK-MOR-611,subg. Quercus,Quercus,Prinoids,TRUE,OAK-MOR-611,Quercus_lyrata
 Quercus_bicolor_|_MANOS_|_PM-96_|_USA_|_New_York_|_PM96,subg. Quercus,Quercus,Prinoids,TRUE,PM96,Quercus_bicolor
 Quercus_macrocarpa_|_HIPP_|_IL-MOR-MH003_-A/B-_|_USA_|_Illinois_|_OAK-MOR-357,subg. Quercus,Quercus,Prinoids,TRUE,OAK-MOR-357,Quercus_macrocarpa
-Quercus_fusiformis_|_CAVENDER-BARES_|_MXGT4_|_Mexico_|_NA_|_MXGT4,subg. Quercus,Virentes,NA,TRUE,MXGT4,Quercus_fusiformis
-Quercus_brandegeei_|_CAVENDER-BARES_|_BJSL25_|_Mexico_|_Baja_California_|_BJSL25,subg. Quercus,Virentes,NA,FALSE,BJSL25,Quercus_brandegeei
-Quercus_sagraeana_|_CAVENDER-BARES_|_CUVN10_|_Cuba_|_NA_|_CUVN10,subg. Quercus,Virentes,NA,FALSE,CUVN10,Quercus_sagraeana
-Quercus_oleoides_|_CAVENDER-BARES_|_CRL0001_|_Costa_Rica._|_NA_|_CRL0001,subg. Quercus,Virentes,NA,FALSE,CRL0001,Quercus_oleoides
-Quercus_virginiana_|_CAVENDER-BARES_|_FLBA140_|_USA_|_Florida_|_FLBA140,subg. Quercus,Virentes,NA,TRUE,FLBA140,Quercus_virginiana
-Quercus_minima_|_CAVENDER-BARES_|_FLMO62_|_USA_|_Florida_|_FLMO62,subg. Quercus,Virentes,NA,TRUE,FLMO62,Quercus_minima
-Quercus_geminata_|_CAVENDER-BARES_|_FLAB109_|_USA_|_Florida_|_FLAB109,subg. Quercus,Virentes,NA,TRUE,FLAB109,Quercus_geminata
+Quercus_fusiformis_|_CAVENDER-BARES_|_MXGT4_|_Mexico_|_NA_|_MXGT4,subg. Quercus,Virentes,,TRUE,MXGT4,Quercus_fusiformis
+Quercus_brandegeei_|_CAVENDER-BARES_|_BJSL25_|_Mexico_|_Baja_California_|_BJSL25,subg. Quercus,Virentes,,FALSE,BJSL25,Quercus_brandegeei
+Quercus_sagraeana_|_CAVENDER-BARES_|_CUVN10_|_Cuba_|_NA_|_CUVN10,subg. Quercus,Virentes,,FALSE,CUVN10,Quercus_sagraeana
+Quercus_oleoides_|_CAVENDER-BARES_|_CRL0001_|_Costa_Rica._|_NA_|_CRL0001,subg. Quercus,Virentes,,FALSE,CRL0001,Quercus_oleoides
+Quercus_virginiana_|_CAVENDER-BARES_|_FLBA140_|_USA_|_Florida_|_FLBA140,subg. Quercus,Virentes,,TRUE,FLBA140,Quercus_virginiana
+Quercus_minima_|_CAVENDER-BARES_|_FLMO62_|_USA_|_Florida_|_FLMO62,subg. Quercus,Virentes,,TRUE,FLMO62,Quercus_minima
+Quercus_geminata_|_CAVENDER-BARES_|_FLAB109_|_USA_|_Florida_|_FLAB109,subg. Quercus,Virentes,,TRUE,FLAB109,Quercus_geminata
 Quercus_sinuata_|_HIPP_|_CA-DAV-MH17_|_USA_|_California_|_OAK-MOR-418,subg. Quercus,Quercus,Stellatae,TRUE,OAK-MOR-418,Quercus_sinuata
 Quercus_oglethorpensis_|_HIPP_|_IL-MOR-MH104__|_USA_|_Illinois_|_OAK-MOR-548,subg. Quercus,Quercus,Stellatae,TRUE,OAK-MOR-548,Quercus_oglethorpensis
 Quercus_havardii_|_HIPP_|_IL-SH-99_|_USA_|_Illinois_|_OAK-MOR-430,subg. Quercus,Quercus,Stellatae,TRUE,OAK-MOR-430,Quercus_havardii
@@ -137,7 +137,7 @@ Quercus_austrina_|_HIPP_|_IL-SH-48_|_USA_|_Illinois_|_OAK-MOR-511,subg. Quercus,
 Quercus_boyntonii_|_HIPP_|_IL-SH-179_|_USA_|_Illinois_|_OAK-MOR-544,subg. Quercus,Quercus,Stellatae,TRUE,OAK-MOR-544,Quercus_boyntonii
 Quercus_similis_|_MANOS_|_PM-107_|_USA_|_LA_|_PM107,subg. Quercus,Quercus,Stellatae,TRUE,PM107,Quercus_similis
 Quercus_stellata_|_MANOS_|_PM-11_|_USA_|_NC_|_PM11,subg. Quercus,Quercus,Stellatae,TRUE,PM11,Quercus_stellata
-Quercus_laceyi_|_HIPP_|_IL-SH-177_|_USA_|_Illinois_|_OAK-MOR-189,subg. Quercus,Quercus,Stellatae,TRUE,OAK-MOR-189,Quercus_laceyi
+Quercus_laceyi_|_HIPP_|_IL-SH-177_|_USA_|_Illinois_|_OAK-MOR-189,subg. Quercus,Quercus,Tx white oaks,TRUE,OAK-MOR-189,Quercus_laceyi
 Quercus_mohriana_|_HIPP_|_IL-SH-36_|_USA_|_Illinois_|_OAK-MOR-222,subg. Quercus,Quercus,Tx white oaks,TRUE,OAK-MOR-222,Quercus_mohriana
 Quercus_polymorpha_|_HIPP_|_IL-SH-084_|_USA_|_Illinois_|_OAK-MOR-173,subg. Quercus,Quercus,Tx white oaks,TRUE,OAK-MOR-173,Quercus_polymorpha
 Quercus_hinckleyi_|_BACKS_|_QUHI006_|_USA_|_Texas_|_OAKS-MOR-472,subg. Quercus,Quercus,Tx white oaks,TRUE,OAKS-MOR-472,Quercus_hinckleyi
