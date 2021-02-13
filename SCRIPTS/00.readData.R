@@ -3,6 +3,8 @@
 library(ape)
 library(openxlsx)
 library(magrittr)
+library(tidytree)
+
 if(!exists('weldTaxa')) {
   source('https://raw.githubusercontent.com/andrew-hipp/morton/master/R/weldTaxa.R')}
 
