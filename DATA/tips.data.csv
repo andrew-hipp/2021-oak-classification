@@ -1,4 +1,4 @@
-tip,subgenus,section,clade,NAm,code,sp
+tip,subgenus,section,subsection,NAm,code,sp
 Quercus_kelloggii_|_HIPP_|_CA-MH69_|_USA_|_California_|_OAK-MOR-476,subg. Quercus,Lobatae,Agrifoliae,TRUE,OAK-MOR-476,Quercus_kelloggii
 Quercus_agrifolia_|_MANOS_|_PM-311_|_US_|_CA_|_PM-311,subg. Quercus,Lobatae,Agrifoliae,TRUE,PM-311,Quercus_agrifolia
 Quercus_agrifolia_var._oxyadenia_|_HIPP_|_CA-DAV-MH55_|_USA_|_California_|_OAK-MOR-127,subg. Quercus,Lobatae,Agrifoliae,TRUE,OAK-MOR-127,Quercus_agrifolia_var._oxyadenia
@@ -23,13 +23,13 @@ Quercus_hemisphaerica_|_MANOS_|_PM-178_|_US_|_NC_|_PM178,subg. Quercus,Lobatae,L
 Quercus_incana_|_MANOS_|_PM-104_|_USA_|_MS_|_PM-104a,subg. Quercus,Lobatae,Laurifoliae,TRUE,PM-104a,Quercus_incana
 Quercus_myrtifolia_|_CAVENDER-BARES_|_JCB-US-FL-AB-MY-2_|_USA_|_Florida_|_OAK-UMN-013,subg. Quercus,Lobatae,Laurifoliae,TRUE,OAK-UMN-013,Quercus_myrtifolia
 Quercus_inopina_|_CAVENDER-BARES_|_JCB-US-FL-AB-IP-2_|_USA_|_Florida_|_OAK-UMN-008,subg. Quercus,Lobatae,Laurifoliae,TRUE,OAK-UMN-008,Quercus_inopina
-Quercus_buckleyi_|_HIPP_|_IL-SH-158_|_USA_|_Illinois_|_OAK-MOR-441A,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-441A,Quercus_buckleyi
-Quercus_acerifolia_|_HIPP_|_IL-SH-22_|_USA_|_Illinois_|_OAK-MOR-435,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-435,Quercus_acerifolia
-Quercus_shumardii_|_HIPP_|_IL-SH-111_|_USA_|_Illinois_|_OAK-MOR-169,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-169,Quercus_shumardii
-Quercus_velutina_|_HIPP_|_IL-MOR-MH076_|_USA_|_Illinois_|_OAK-MOR-393,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-393,Quercus_velutina
-Quercus_coccinea_|_HIPP_|_JW2604_|_USA_|_Illinois_|_OAK-MOR-JW-2604,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-JW-2604,Quercus_coccinea
-Quercus_ellipsoidalis_|_HIPP_|_IL-MOR-MH087__|_USA_|_Illinois_|_OAK-MOR-390,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-390,Quercus_ellipsoidalis
-Quercus_rubra_|_HIPP_|_IL-MOR-MH085_|_USA_|_Illinois_|_OAK-MOR-498,subg. Quercus,Lobatae,Rubrae,TRUE,OAK-MOR-498,Quercus_rubra
+Quercus_buckleyi_|_HIPP_|_IL-SH-158_|_USA_|_Illinois_|_OAK-MOR-441A,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-441A,Quercus_buckleyi
+Quercus_acerifolia_|_HIPP_|_IL-SH-22_|_USA_|_Illinois_|_OAK-MOR-435,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-435,Quercus_acerifolia
+Quercus_shumardii_|_HIPP_|_IL-SH-111_|_USA_|_Illinois_|_OAK-MOR-169,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-169,Quercus_shumardii
+Quercus_velutina_|_HIPP_|_IL-MOR-MH076_|_USA_|_Illinois_|_OAK-MOR-393,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-393,Quercus_velutina
+Quercus_coccinea_|_HIPP_|_JW2604_|_USA_|_Illinois_|_OAK-MOR-JW-2604,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-JW-2604,Quercus_coccinea
+Quercus_ellipsoidalis_|_HIPP_|_IL-MOR-MH087__|_USA_|_Illinois_|_OAK-MOR-390,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-390,Quercus_ellipsoidalis
+Quercus_rubra_|_HIPP_|_IL-MOR-MH085_|_USA_|_Illinois_|_OAK-MOR-498,subg. Quercus,Lobatae,Coccineae,TRUE,OAK-MOR-498,Quercus_rubra
 Quercus_gravesii_|_HIPP_|_CA-DAV-MH45_|_USA_|_California_|_OAK-MOR-399,subg. Quercus,Lobatae,TX red oaks,TRUE,OAK-MOR-399,Quercus_gravesii
 Quercus_canbyi_|_HIPP_|_IL-SH-132_|_USA_|_Illinois_|_OAK-MOR-543,subg. Quercus,Lobatae,TX red oaks,TRUE,OAK-MOR-543,Quercus_canbyi
 Quercus_mexicana_|_HIPP_|_IL-SH-018_|_USA_|_Illinois_|_OAK-MOR-488,subg. Quercus,Lobatae,Erythromexicana,FALSE,OAK-MOR-488,Quercus_mexicana
