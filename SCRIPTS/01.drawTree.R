@@ -4,30 +4,29 @@ require(dplyr)
 
 troubleshoot = F
 
-lwdLabel = c(clade = 1, subsection = 1, section = 1)
-cexLabel = c(clade = 1, subsection = 2, section = 2)
-colLab <- c(Lobatae = 'red', Quercus = 'black',
-            Protobalanus = 'blue', Ponticae = 'blue', Virentes = 'blue',
+lwdLabel = c(clade = 0.5, subsection = 1, section = 1)
+cexLabel = c(clade = 1, subsection = 2, section = 3)
+colLab <- c(Lobatae = 'red3', Quercus = 'black',
+            Protobalanus = 'gray', Ponticae = 'gray', Virentes = 'gray',
             ## now red oak subsections
             Agrifoliae = 'red',
-            Palustres = 'red1',
-            Laurifoliae = 'red2',
-            Coccineae = 'red3',
+            Palustres = 'red',
+            Laurifoliae = 'red',
+            Coccineae = 'red',
             ## ... and white oak subsections
             Roburoids = 'black',
-            Dumosae = 'gray10',
-            Albae = 'gray20',
-            Prinoids = 'gray30',
-            Stellatae = 'gray40',
+            Dumosae = 'gray50',
+            Albae = 'gray50',
+            Prinoids = 'gray50',
+            Stellatae = 'gray50',
             ### ... and informal clades
-            'TX red oaks' = 'red4',
-            Erythromexicana = 'orange4',
+            'TX red oaks' = 'red',
+            Erythromexicana = 'red',
             'Tx white oaks' = 'gray50',
-            Leucomexicana = 'gray60',
-
+            Leucomexicana = 'gray50'
           )
 
-offsetLabel = c(subsection = 20, section = 25)
+offsetLabel = c(clade = 15, subsection = 20, section = 25)
 offsetTemp <- min(offsetLabel)
 barExtend = -0.2
 
@@ -42,7 +41,7 @@ p <- p + theme(legend.position='none')
 p <- p + scale_color_manual(values=c("gray", "black"))
 
 ## add clade labels
-for(i in c('subsection', 'section')) {
+for(i in c('clade', 'subsection', 'section')) {
   for(j in unique(tip.dat[[i]])) {
     if(is.na(j)) next
     message(paste('doing', i, j))
@@ -55,7 +54,9 @@ for(i in c('subsection', 'section')) {
                              fontsize = cexLabel[i],
                              barsize = lwdLabel[i],
                              label = j, color = colLab[j],
-                             extend = barExtend)
+                             extend = barExtend,
+                             lty = ifelse(i == 'clade', 'dotted', 'solid')
+                           ) # close geom_cladelabel
   }
 }
 
