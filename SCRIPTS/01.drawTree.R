@@ -4,8 +4,8 @@ require(dplyr)
 
 troubleshoot = F
 
-lwdLabel = c(subsection = 1, section = 1, subgenus = 1)
-cexLabel = c(subsection = 2, section = 2, subgenus = 2)
+lwdLabel = c(clade = 1, subsection = 1, section = 1)
+cexLabel = c(clade = 1, subsection = 2, section = 2)
 colLab <- c(Lobatae = 'red', Quercus = 'black',
             Protobalanus = 'blue', Ponticae = 'blue', Virentes = 'blue',
             ## now red oak subsections
@@ -13,16 +13,18 @@ colLab <- c(Lobatae = 'red', Quercus = 'black',
             Palustres = 'red1',
             Laurifoliae = 'red2',
             Coccineae = 'red3',
-            'TX red oaks' = 'red4',
-            Erythromexicana = 'orange4',
             ## ... and white oak subsections
             Roburoids = 'black',
             Dumosae = 'gray10',
             Albae = 'gray20',
             Prinoids = 'gray30',
             Stellatae = 'gray40',
+            ### ... and informal clades
+            'TX red oaks' = 'red4',
+            Erythromexicana = 'orange4',
             'Tx white oaks' = 'gray50',
-            Leucomexicana = 'gray60'
+            Leucomexicana = 'gray60',
+
           )
 
 offsetLabel = c(subsection = 20, section = 25)
