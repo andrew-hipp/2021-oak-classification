@@ -63,6 +63,5 @@ for(i in c('clade', 'subsection', 'section')) {
 
 
 pdf('../OUT/prettyTree.pdf', 12, 8)
-
-print(p)
+  print(p)
 dev.off()
