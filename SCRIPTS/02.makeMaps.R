@@ -5,8 +5,15 @@ library(openxlsx)
 # get data used in 2018 New Phyt paper -- slow download!
 # wrong data -- sub in cleaned data
 
-if(!exists('dat.specimen'))
-  dat.specimen <- read.csv('https://raw.githubusercontent.com/andrew-hipp/oak-convergence-2017/master/data/tables/all.eco.data.exportedFromR.2016-02-03.csv', as.is = T)
+if(!exists('dat.specimen')) {
+  dat.specimen <-
+    read.xlsx('https://nph.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fnph.14773&file=nph14773-sup-0004-TableS2.xlsx', 2)
+  # dat.specimen.extras <-
+  #   read.csv('https://raw.githubusercontent.com/andrew-hipp/oak-convergence-2017/master/data/tables/all.eco.data.exportedFromR.2016-02-03.csv', as.is = T)
+  dat.specimen$Species <-
+    sapply(strsplit(dat.specimen$Species, "_", fixed = T), '[', 2)
+  dat.specimen <- dat.specimen[dat.specimen$use, ]
+  }
 dat.spClass <- read.xlsx('../DATA/spClassification.xlsx', 1)
 
 mapEm <- function(x, outName = NA,
@@ -24,16 +31,20 @@ mapEm <- function(x, outName = NA,
   if(!is.na(overplot)) map(overplot, add = TRUE,
                             col = overplot.col, lwd = overplot.lwd)
   map(basemap, col = base.col, lwd = base.lwd, add = TRUE)
-  if(!is.na(outName)) dev.off()
+  if(!is.na(outName)) {
+    dev.off()
+    missing <- x[which(!x %in% dat[[col]])]
+    if(length(missing) > 0) {
+      logfile <- paste(outName, '.log.txt', sep = '')
+      warning(paste('spp missing; check logfile', logfile))
+      writeLines(missing, logfile)
+    } # close if length(missing) > 0
+  } # close if is.na
   return(ifelse(is.na(outName), 0, paste('saved', outName)))
 }
 
-# example -- loop over this
-i = c('acerifolia', 'rubra', 'coccinea', 'shumardii') # example
-mapEm(i)
-
 # looping
-for(i in dat.spClass$subsection %>% unique) {
-  spp <- dat.spClass$sp[dat.spClass$subsection == i] %>% unique
-  mapEm(spp, outName = paste('../OUT/', i, '.pdf', sep = ''))
+for(i in dat.spClass$map %>% unique) {
+  spp <- dat.spClass$sp[dat.spClass$map == i] %>% unique
+  mapEm(spp, outName = paste('../OUT/MAP.PDFS/', i, '.pdf', sep = ''))
 }
