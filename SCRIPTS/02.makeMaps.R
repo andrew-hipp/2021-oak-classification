@@ -13,11 +13,14 @@ if(!exists('dat.specimen')) {
   dat.specimen$Species <-
     sapply(strsplit(dat.specimen$Species, "_", fixed = T), '[', 2)
   dat.specimen <- dat.specimen[dat.specimen$use, ]
+  dat.specimen <-
+    dat.specimen[-which(dat.specimen$Species == 'havardii' &
+                        dat.specimen$longitude < -105), ]
   }
 dat.spClass <- read.xlsx('../DATA/spClassification.xlsx', 1)
 dat.spClass <- dat.spClass[!is.na(dat.spClass$map), ]
 
-mapEm <- function(x, outName = NA,
+mapEm <- function(x = 'all', outName = NA,
                   dat = dat.specimen, col = "Species",
                   lat = 'latitude', lon = 'longitude',
                   basemap = 'usa', overplot = 'state',
@@ -25,7 +28,9 @@ mapEm <- function(x, outName = NA,
                   overplot.col = 'gray85', overplot.lwd = 0.1,
                   pt.col = 'gray', pt.pch = 19, pt.cex = 1,
                   mapTitle = NA) {
-  use <- which(dat[[col]] %in% x)
+  if(x == 'all') {
+    use <- seq(dim(dat)[1])
+  } else use <- which(dat[[col]] %in% x)
   if(!is.na(outName)) pdf(outName)
   map(basemap, col = base.col, lwd = base.lwd) # close map
   points(dat[use, c(lon, lat)],
