@@ -52,7 +52,7 @@ tr$tip.label <- gsub('_', ' ', tr$tip.label, fixed = T)
 
 tip.dat <- read.csv('../DATA/tips.data.csv', row.names = 8, as.is = TRUE)
 row.names(tip.dat) <- gsub('_', ' ', row.names(tip.dat), fixed = T)
-tip.dat$node <- nodeid(tr, row.names(tip.dat))
+tip.dat$node <- nodeid(as_tibble(tr), row.names(tip.dat))
 
 pdf('../OUT/tr.checkingNames.pdf', 8.5,15)
 plot(tr, cex = 0.5, tip.color = ifelse(tip.dat[tr$tip.label, 'NAm'], 'black', 'gray'))

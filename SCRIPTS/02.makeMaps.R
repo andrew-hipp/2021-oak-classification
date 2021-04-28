@@ -15,22 +15,25 @@ if(!exists('dat.specimen')) {
   dat.specimen <- dat.specimen[dat.specimen$use, ]
   }
 dat.spClass <- read.xlsx('../DATA/spClassification.xlsx', 1)
+dat.spClass <- dat.spClass[!is.na(dat.spClass$map), ]
 
 mapEm <- function(x, outName = NA,
                   dat = dat.specimen, col = "Species",
                   lat = 'latitude', lon = 'longitude',
                   basemap = 'usa', overplot = 'state',
                   base.col = 'black', base.lwd = 1,
-                  overplot.col = 'white', overplot.lwd = 0.1,
-                  pt.col = 'gray', pt.pch = 19) {
+                  overplot.col = 'gray85', overplot.lwd = 0.1,
+                  pt.col = 'gray', pt.pch = 19, pt.cex = 1,
+                  mapTitle = NA) {
   use <- which(dat[[col]] %in% x)
   if(!is.na(outName)) pdf(outName)
-  map(basemap, col = base.col, lwd = base.lwd)
+  map(basemap, col = base.col, lwd = base.lwd) # close map
   points(dat[use, c(lon, lat)],
-         pch = pt.pch, col = pt.col)
+         pch = pt.pch, col = pt.col, cex = pt.cex)
   if(!is.na(overplot)) map(overplot, add = TRUE,
                             col = overplot.col, lwd = overplot.lwd)
   map(basemap, col = base.col, lwd = base.lwd, add = TRUE)
+  if(!is.na(mapTitle)) title(mapTitle)
   if(!is.na(outName)) {
     dev.off()
     missing <- x[which(!x %in% dat[[col]])]
@@ -48,3 +51,11 @@ for(i in dat.spClass$map %>% unique) {
   spp <- dat.spClass$sp[dat.spClass$map == i] %>% unique
   mapEm(spp, outName = paste('../OUT/MAP.PDFS/', i, '.pdf', sep = ''))
 }
+
+pdf('../OUT/mapLayout.pdf', 8.5, 11)
+layout(matrix(c(1:10), 5, 2))
+for(i in (dat.spClass$map %>% unique)) {
+  spp <- dat.spClass$sp[dat.spClass$map == i] %>% unique
+  mapEm(spp, mapTitle = i, pt.col = colLab[i], pt.cex = 0.3)
+}
+dev.off()
