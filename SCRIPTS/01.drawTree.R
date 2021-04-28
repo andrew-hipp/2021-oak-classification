@@ -8,21 +8,21 @@ lwdLabel = c(clade = 0.5, subsection = 1, section = 1)
 cexLabel = c(clade = 1, subsection = 2, section = 3)
 colLab <- c(Lobatae = 'red3', Quercus = 'black',
             Protobalanus = 'gray', Ponticae = 'gray', Virentes = 'gray',
-            ## now red oak subsections
+          ## now red oak subsections
             Agrifoliae = 'red',
             Palustres = 'red',
-            Laurifoliae = 'red',
+            Phellos = 'red',
             Coccineae = 'red',
-            ## ... and white oak subsections
-            Roburoids = 'black',
+          ## ... and white oak subsections
             Dumosae = 'gray50',
             Albae = 'gray50',
-            Prinoids = 'gray50',
+            Prinoideae = 'gray50',
             Stellatae = 'gray50',
+            Polymorphae = 'gray50',
             ### ... and informal clades
             'TX red oaks' = 'red',
             Erythromexicana = 'red',
-            'Tx white oaks' = 'gray50',
+            Roburoids = 'black',
             Leucomexicana = 'gray50'
           )
 
