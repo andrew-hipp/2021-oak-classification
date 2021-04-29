@@ -4,6 +4,7 @@ Quercus toumeyi
 Quercus striatula
 Quercus grisea
 Quercus arizonica
+Quercus depressipes
 Quercus engelmannii
 Quercus oblongifolia
 Quercus rugosa
@@ -47,30 +48,14 @@ Quercus stellata
 Quercus boyntonii
 Quercus oglethorpensis
 Quercus sinuata
-Quercus boissieri
-Quercus infectoria
-Quercus cedrorum
-Quercus kotschyana
-Quercus pubescens
-Quercus vulcanica
-Quercus faginea
-Quercus macranthera
-Quercus frainetto
-Quercus dalechampii
-Quercus lusitanica
+Quercus sinuata var. breviloba
 Quercus petraea
 Quercus pyrenaica
 Quercus canariensis
 Quercus robur
 Quercus hartwissiana
-Quercus robur ssp. imeretina
-Quercus aliena
-Quercus griffithii
-Quercus fabri
-Quercus yunnanensis
 Quercus serrata
 Quercus mongolica
-Quercus dentata
 Quercus alba
 Quercus michauxii
 Quercus montana
@@ -87,7 +72,9 @@ Quercus cornelius-mulleri
 Quercus berberidifolia
 Quercus durata
 Quercus garryana
+Quercus garryana var. breweri
 Quercus lobata
+Quercus gambelii
 Quercus geminata
 Quercus virginiana
 Quercus minima
@@ -102,6 +89,38 @@ Quercus vacciniifolia
 Quercus tomentella
 Quercus palmeri
 Quercus cedrosensis
+Quercus wislizeni
+Quercus parvula var. tamalpaiensis
+Quercus parvula var. shrevei
+Quercus agrifolia
+Quercus agrifolia var. oxyadenia
+Quercus kelloggii
+Quercus texana
+Quercus palustris
+Quercus acerifolia
+Quercus shumardii
+Quercus buckleyi
+Quercus rubra
+Quercus ellipsoidalis
+Quercus velutina
+Quercus coccinea
+Quercus imbricaria
+Quercus georgiana
+Quercus ilicifolia
+Quercus pagoda
+Quercus incana
+Quercus hemisphaerica
+Quercus inopina
+Quercus myrtifolia
+Quercus laevis
+Quercus nigra
+Quercus arkansana
+Quercus elliottii
+Quercus phellos
+Quercus laurifolia
+Quercus falcata
+Quercus marilandica
+Quercus marilandica var. ashei
 Quercus crassifolia
 Quercus brachystachys
 Quercus mcvaughii
@@ -144,39 +163,3 @@ Quercus mexicana
 Quercus affinis
 Quercus gravesii
 Quercus canbyi
-Quercus incana
-Quercus hemisphaerica
-Quercus inopina
-Quercus myrtifolia
-Quercus laevis
-Quercus nigra
-Quercus arkansana
-Quercus elliottii
-Quercus phellos
-Quercus laurifolia
-Quercus falcata
-Quercus marilandica
-Quercus pagoda
-Quercus imbricaria
-Quercus georgiana
-Quercus ilicifolia
-Quercus acerifolia
-Quercus shumardii
-Quercus buckleyi
-Quercus rubra
-Quercus ellipsoidalis
-Quercus velutina
-Quercus coccinea
-Quercus texana
-Quercus palustris
-Quercus wislizeni
-Quercus parvula var. tamalpaiensis
-Quercus parvula var. shrevei
-Quercus agrifolia
-Quercus agrifolia var. oxyadenia
-Quercus kelloggii
-Quercus gambelii
-Quercus depressipes
-Quercus sinuata var. breviloba
-Quercus marilandica var. ashei
-Quercus garryana var. breweri
