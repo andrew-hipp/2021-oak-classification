@@ -3,8 +3,11 @@ library(magrittr)
 library(maps)
 library(openxlsx)
 # get data used in 2018 New Phyt paper -- slow download!
-# wrong data -- sub in cleaned data
 
+addNewDat <- TRUE
+newDatVec <- c('Coccineae')
+columnsKeep <- c('Species', 'use', 'latitude', 'longitude')
+columnsNew <- c('specificEpithet', 'use', 'decimalLatitude', 'decimalLongitude')
 if(!exists('dat.specimen')) {
   dat.specimen <-
     read.xlsx('https://nph.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fnph.14773&file=nph14773-sup-0004-TableS2.xlsx', 2)
@@ -16,7 +19,23 @@ if(!exists('dat.specimen')) {
   dat.specimen <-
     dat.specimen[-which(dat.specimen$Species == 'havardii' &
                         dat.specimen$longitude < -105), ]
+  dat.specimen <- dat.specimen[, columnsKeep]
   }
+
+if(addNewDat) {
+  newDatList <- lapply(newDatVec, function(x) {
+    print(dir(paste('../DATA', x, sep = '/'), full = TRUE))
+    temp <- lapply(dir(paste('../DATA', x, sep = '/'), full = TRUE), read.csv, as.is = T)
+    temp <- do.call('rbind', temp)
+    temp <- temp[!is.na(temp$decimalLatitude), ]
+    temp$use <- TRUE
+    temp <- temp[grep('North Carolina', temp$stateProvince), columnsNew]
+    names(temp) <- columnsKeep
+    return(temp)
+  }) # close sapply
+  names(newDatList) <- newDatVec
+}
+
 dat.spClass <- read.xlsx('../DATA/spClassification.xlsx', 1)
 dat.spClass <- dat.spClass[!is.na(dat.spClass$map), ]
 
