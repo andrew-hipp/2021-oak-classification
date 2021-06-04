@@ -19,7 +19,7 @@ if(!exists('dat.specimen')) {
   dat.specimen <-
     dat.specimen[-which(dat.specimen$Species == 'havardii' &
                         dat.specimen$longitude < -105), ]
-  dat.specimen <- dat.specimen[, columnsKeep]
+  dat.specimen <- dat.specimen[columnsKeep]
   }
 
 if(addNewDat) {
@@ -32,15 +32,16 @@ if(addNewDat) {
     temp <- temp[grep('North Carolina', temp$stateProvince), columnsNew]
     names(temp) <- columnsKeep
     return(temp)
-  }) # close sapply
-  names(newDatList) <- newDatVec
+  }) # close lapply
+  newDatList <- do.call('rbind', newDatList)
+  newDatSpecimen <- rbind(dat.specimen[columnsKeep], newDatList)
 }
 
 dat.spClass <- read.xlsx('../DATA/spClassification.xlsx', 1)
 dat.spClass <- dat.spClass[!is.na(dat.spClass$map), ]
 
 mapEm <- function(x = 'all', outName = NA,
-                  dat = dat.specimen, col = "Species",
+                  dat = newDatSpecimen, col = "Species",
                   lat = 'latitude', lon = 'longitude',
                   basemap = 'usa', overplot = 'state',
                   base.col = 'black', base.lwd = 1,
