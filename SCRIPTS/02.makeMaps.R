@@ -74,7 +74,8 @@ mapEm <- function(x = 'all', outName = NA,
 # looping
 for(i in dat.spClass$map %>% unique) {
   spp <- dat.spClass$sp[dat.spClass$map == i] %>% unique
-  mapEm(spp, outName = paste('../OUT/MAP.PDFS/', i, '.pdf', sep = ''))
+  mapEm(spp, pt.col = colLab[i],  
+        outName = paste('../OUT/MAP.PDFS/', i, '.pdf', sep = ''))
 }
 
 pdf('../OUT/mapLayout.pdf', 8.5, 11)
